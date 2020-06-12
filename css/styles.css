@@ -279,6 +279,7 @@ p {
 
 .page-footer {
   background-color: #2f303a;
+  padding-top: 56px;
 }
 
 .social-list .link {
@@ -415,7 +416,8 @@ p {
 }
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 56px;
 }
 
 .devgoit {
