@@ -108,6 +108,7 @@ p {
 .addres {
   font-style: inherit;
   align-items: center;
+  margin-left: auto;
 }
 
 .addres-list {
