@@ -19,32 +19,32 @@
     <!--Шапка-->
 
     <header class="page-header">
-      <div class="container">
+      <div class="container nav-header">
+        <a href="./index.html" class="logo">
+          <span class="logo-blue">Web</span>
+          <span class="logo-black">Studio</span>
+        </a>
         <nav>
-          <a href="./index.html" class="logo">
-            <span class="logo-blue">Web</span>
-            <span class="logo-black">Studio</span>
-          </a>
           <ul class="site-nav list">
-            <li>
+            <li class="item">
               <a href="./index.html" class="link current">Студия</a>
             </li>
-            <li>
+            <li class="item">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <address class="addres list">
-          <ul class="list">
-            <li>
+        <address class="addres">
+          <ul class="addres-list list">
+            <li class="item">
               <a href="mailto:info@devstudio.com" class="contact"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="tel:380961111111" class="contact">+38 096 111 11 11</a>
             </li>
           </ul>
@@ -65,7 +65,7 @@
         <div class="container">
           <h2 class="section-title">Наши преймущества</h2>
           <ul class="advantages list">
-            <li>
+            <li class="item">
               <a href="">
                 <img src="./img/antenna.svg" alt="Антена" width="70" />
               </a>
@@ -75,7 +75,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <a href="">
                 <img src="./img/clock.svg" alt="Часы" width="70" />
               </a>
@@ -85,7 +85,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <a href="">
                 <img src="./img/diagram.svg" alt="Ноутбук" width="70" />
               </a>
@@ -95,7 +95,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <a href="">
                 <img src="./img/astronaut.svg" alt="Астронавт" width="70" />
               </a>
@@ -115,7 +115,7 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="applications list">
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img src="./img/box-1.jpg" alt="Ноутбук" width="370" />
                 <p class="link">
@@ -123,7 +123,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img src="./img/box-2.jpg" alt="Смартфон" width="370" />
                 <p class="link">
@@ -131,7 +131,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img src="./img/box-3.jpg" alt="Компьютер" width="370" />
                 <p class="link">
@@ -145,13 +145,18 @@
 
       <!--команда-->
 
-      <section class="section background">
-        <div class="container">
-          <h2 class="section-title our-team">Наша команда</h2>
+      <section class="section">
+        <div class="team-section">
+          <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
-            <li>
+            <li class="item">
               <a href="">
-                <img src="./img/smith.jpg" alt="Фото Джона" width="270" />
+                <img
+                  src="./img/smith.jpg"
+                  class="foto"
+                  alt="Фото Джона"
+                  width="270"
+                />
               </a>
               <h3 class="name">Николай Кучеренко</h3>
               <p class="profession">Product Designer</p>
@@ -170,9 +175,14 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <a href="">
-                <img src="./img/stewart.jpg" alt="Фото Марты" width="270" />
+                <img
+                  src="./img/stewart.jpg"
+                  class="foto"
+                  alt="Фото Марты"
+                  width="270"
+                />
               </a>
               <h3 class="name">Ольга Иванова</h3>
               <p class="profession">Frontend Developer</p>
@@ -191,9 +201,14 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <a href="">
-                <img src="./img/jakis.jpg" alt="Фото Роберта" width="270" />
+                <img
+                  src="./img/jakis.jpg"
+                  class="foto"
+                  alt="Фото Роберта"
+                  width="270"
+                />
               </a>
               <h3 class="name">Андрей Шевченко</h3>
               <p class="profession">Marketing</p>
@@ -212,9 +227,14 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <a href="">
-                <img src="./img/doe.jpg" alt="Фото Мартина" width="270" />
+                <img
+                  src="./img/doe.jpg"
+                  class="foto"
+                  alt="Фото Мартина"
+                  width="270"
+                />
               </a>
               <h3 class="name">Иван Николаев</h3>
               <p class="profession">UI Designer</p>
@@ -242,7 +262,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="list">
+          <ul class="list customers">
             <li>
               <a href="">
                 <img src="./img/logo-1.svg" alt="Постоянные клиенты 1"
@@ -281,7 +301,7 @@
     <!--Подвал-->
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container footer">
         <div>
           <a href="./index.html" class="logo">
             <span class="logo-blue">Web</span>
@@ -323,6 +343,8 @@
           />
           <button type="button" class="button">Подписаться</button>
         </div>
+      </div>
+      <div class="devgoit">
         <p class="data">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
