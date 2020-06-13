@@ -120,6 +120,7 @@ p {
 }
 
 .addres .contact {
+  display: block;
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -131,6 +132,16 @@ p {
 .addres .contact:hover,
 .addres .contact:focus {
   color: var(--accent-color);
+}
+
+.addres .city {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.addres .mail {
+  margin-top: 0;
+  margin-bottom: 9px;
 }
 
 .section {
@@ -263,7 +274,9 @@ p {
   line-height: 1.71;
 }
 
-.footer-adres {
+.footer-link {
+  margin-top: 0;
+  margin-bottom: 20px;
   color: var(--primary-white-color);
 
   font-weight: 700;
@@ -417,7 +430,12 @@ p {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 56px;
+}
+
+.logo-footer {
+  margin-bottom: 8px;
 }
 
 .devgoit {
