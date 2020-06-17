@@ -42,7 +42,6 @@ p {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
 }
 
 .logo {
@@ -120,7 +119,6 @@ p {
 }
 
 .addres .contact {
-  display: block;
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -169,22 +167,45 @@ p {
 }
 
 .hero {
-  margin-bottom: 94px;
-  outline: 2px solid red;
-  text-align: center;
-
   background-color: #2f303a;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/Hero.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  text-align: center;
 }
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30;
+  margin-bottom: 0;
+  padding-top: 200px;
+  padding-bottom: 30px;
 
   color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+}
+.service {
+  margin-bottom: 200px;
+}
+
+.section-advantages {
+  padding-top: 94px;
 }
 
 .advantages {
@@ -210,6 +231,12 @@ p {
   line-height: 1.71;
 }
 
+.section-team {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .team-section {
   background-color: var(--primary-bg-color);
   padding-top: 94px;
@@ -224,6 +251,14 @@ p {
 .team {
   display: flex;
   justify-content: center;
+}
+
+.team .item {
+  background: #ffffff;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team .item:not(:last-child) {
@@ -291,8 +326,15 @@ p {
 }
 
 .page-footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2f303a;
   padding-top: 56px;
+}
+
+.social-list {
+  display: flex;
 }
 
 .social-list .link {
@@ -431,7 +473,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 56px;
+  padding-bottom: 56px;
 }
 
 .logo-footer {
@@ -442,4 +484,5 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 21px;
 }
